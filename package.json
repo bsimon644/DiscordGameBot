@@ -1,0 +1,22 @@
+{
+  "name": "game-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "dev": "nodemon bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.4.1",
+    "discord-api-types": "^0.32.1",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "node": "^16.14.2",
+    "nodemon": "^2.0.16"
+  },
+  "description": ""
+}
