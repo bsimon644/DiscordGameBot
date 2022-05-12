@@ -2,7 +2,7 @@ require("dotenv").config();
 const fs = require("fs");
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { Client, Intents, Collection } = require('discord.js');
+const { Client, Intents, Collection, MessageActionRow, MessageButton } = require('discord.js');
 const client = new Client({ 
   intents: [
     Intents.FLAGS.GUILDS,
@@ -60,7 +60,7 @@ client.on("interactionCreate", async interaction => {
   const command = client.commands.get(interaction.commandName);
 
   if(!command) return;
-
+  
   try {
     await command.execute(interaction);
   }
